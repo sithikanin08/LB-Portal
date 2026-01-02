@@ -441,13 +441,13 @@ export const frontOfficeDepartments: Department[] = [
           'Building a proper communication bridge',
           'Manage all IR groups',
           'Take part in IR calls',
-          'Supervise the creation of IR booklets and trackers with Documentation team',
+          'Create, maintain, and update IR booklets, trackers, and internal documents',
           'Create timelines and tasks for IR teams',
           'Promotion of opportunities and the product through IR groups',
           'Create and execute IR group engagement plans',
           'Overlook the processing of CVs received',
-          'Conducting IR researches',
-          'Responsible for handling Audit processes',
+          'Conduct IR-related research to support decision-making',
+          'Handle and ensure compliance with IR tracking processes',
           'Ensure ongoing communication with EP, Home Entity and OP throughout the realization period'
         ],
         kpis: [
