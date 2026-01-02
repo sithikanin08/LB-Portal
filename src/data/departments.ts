@@ -454,6 +454,7 @@ export const frontOfficeDepartments: Department[] = [
           'Number of achieved targets',
           'Process time of applications',
           'Timeliness and completeness of content ( IR booklets, trackers, promotional materials)',
+          'Effectiveness of cross-team communication (IR × Marketing, IR × Matching)',
           'Efficient communication',
           'Risk management',
           'Membership Engagement'

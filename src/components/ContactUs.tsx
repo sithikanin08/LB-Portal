@@ -77,13 +77,13 @@ const ContactUs = () => {
             {/* Contact Details */}
             <div className="space-y-4">
               <a
-                href="tel:0760006189"
+                href="tel:+94760006189"
                 className="flex items-center gap-4 text-base text-muted-foreground hover:text-accent transition-all duration-300 group bg-secondary/30 rounded-xl p-4 hover:bg-accent/10"
               >
                 <div className="w-12 h-12 rounded-full bg-accent/20 flex items-center justify-center flex-shrink-0 group-hover:bg-accent/30 group-hover:scale-110 transition-all duration-300">
                   <Phone className="w-5 h-5 text-accent" />
                 </div>
-                <span className="font-medium">0760006189</span>
+                <span className="font-medium">+94 76 000 6189</span>
               </a>
               <a
                 href="mailto:dinadijayathialke@aiesec.net"
@@ -92,7 +92,7 @@ const ContactUs = () => {
                 <div className="w-12 h-12 rounded-full bg-accent/20 flex items-center justify-center flex-shrink-0 group-hover:bg-accent/30 group-hover:scale-110 transition-all duration-300">
                   <Mail className="w-5 h-5 text-accent" />
                 </div>
-                <span className="font-medium truncate">dinadijayathialke@aiesec.net</span>
+                <span className="font-medium break-all">dinadijayathialke@aiesec.net</span>
               </a>
             </div>
           </motion.div>
