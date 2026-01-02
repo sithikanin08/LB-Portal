@@ -33,7 +33,7 @@ const DepartmentGrid = () => {
           className="text-center mb-12"
         >
           <h2 className="font-display text-3xl md:text-4xl font-semibold text-foreground mb-4">
-            Explore Positions
+            Explore Roles
           </h2>
           <p className="font-body text-muted-foreground max-w-2xl mx-auto">
             Discover your path to leadership. Choose between Front Office roles that drive external impact
