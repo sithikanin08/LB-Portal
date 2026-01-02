@@ -37,7 +37,7 @@ const DepartmentGrid = () => {
           </h2>
           <p className="font-body text-muted-foreground max-w-2xl mx-auto">
             Discover your path to leadership. Choose between Front Office roles that drive external impact
-            or Back Office positions that power our operations.
+            or Back Office roles that power our operations.
           </p>
         </motion.div>
 

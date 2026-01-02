@@ -9,7 +9,7 @@ const Footer = () => {
         </div>
         
         <p className="font-body text-sm text-muted-foreground text-center">
-          Leadership Board Applications 2026/27 • Youth Leadership Development
+          Leadership Board Applications 26.27 • Youth Leadership Development
         </p>
         
         <p className="font-body text-xs text-muted-foreground">

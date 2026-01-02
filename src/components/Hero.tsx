@@ -58,7 +58,7 @@ const Hero = () => {
           transition={{ delay: 0.6, duration: 0.6 }}
           className="font-body text-muted-foreground text-lg md:text-xl max-w-2xl mx-auto mb-8 px-4"
         >
-          Leadership Board Applications 2026/27
+          Leadership Board Applications 26.27
         </motion.p>
 
         <motion.div

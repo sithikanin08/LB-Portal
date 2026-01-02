@@ -35,7 +35,7 @@ const ApplyLBSection = () => {
                   Ready to Lead?
                 </h2>
                 <p className="font-body text-sm sm:text-base text-white/80">
-                  Apply now for AIESEC in SLIIT Leadership Board 2026/27
+                  Apply now for AIESEC in SLIIT Leadership Board 26.27
                 </p>
               </div>
             </div>
