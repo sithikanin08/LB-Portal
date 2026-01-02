@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Department, RoleLevel, getRoleLevelLabel } from '@/data/departments';
 import * as Icons from 'lucide-react';
-import { X, Clock, Target, Briefcase, Star } from 'lucide-react';
+import { X, Target, Briefcase } from 'lucide-react';
 
 interface RolePanelProps {
   department: Department | null;
@@ -115,19 +115,6 @@ const RolePanel = ({ department, isOpen, onClose }: RolePanelProps) => {
                   transition={{ duration: 0.3 }}
                   className="space-y-6 sm:space-y-8"
                 >
-                  {/* Mission */}
-                  <section>
-                    <div className="flex items-center gap-2 mb-2 sm:mb-3">
-                      <Target className={`w-4 h-4 sm:w-5 sm:h-5 ${isFrontOffice ? 'text-accent' : 'text-navy'}`} />
-                      <h3 className="font-display text-base sm:text-lg font-semibold text-foreground">
-                        The Mission
-                      </h3>
-                    </div>
-                    <p className="font-body text-sm sm:text-base text-muted-foreground leading-relaxed">
-                      {roleDetails.mission}
-                    </p>
-                  </section>
-
                   {/* Responsibilities */}
                   <section>
                     <div className="flex items-center gap-2 mb-2 sm:mb-3">
@@ -144,32 +131,6 @@ const RolePanel = ({ department, isOpen, onClose }: RolePanelProps) => {
                         </li>
                       ))}
                     </ul>
-                  </section>
-
-                  {/* Competencies */}
-                  <section>
-                    <div className="flex items-center gap-2 mb-2 sm:mb-3">
-                      <Star className={`w-4 h-4 sm:w-5 sm:h-5 ${isFrontOffice ? 'text-accent' : 'text-navy'}`} />
-                      <h3 className="font-display text-base sm:text-lg font-semibold text-foreground">
-                        Core Competencies
-                      </h3>
-                    </div>
-                    <div className="flex flex-wrap gap-1.5 sm:gap-2">
-                      {roleDetails.competencies.map((comp, idx) => (
-                        <span
-                          key={idx}
-                          className={`
-                            px-2 sm:px-3 py-1 sm:py-1.5 rounded-full font-body text-xs sm:text-sm
-                            ${isFrontOffice
-                              ? 'bg-accent/10 text-accent border border-accent/20'
-                              : 'bg-navy/10 text-navy border border-navy/20'
-                            }
-                          `}
-                        >
-                          {comp}
-                        </span>
-                      ))}
-                    </div>
                   </section>
 
                   {/* KPIs */}
@@ -190,23 +151,6 @@ const RolePanel = ({ department, isOpen, onClose }: RolePanelProps) => {
                           <span className="font-body text-xs sm:text-sm text-foreground">{kpi}</span>
                         </div>
                       ))}
-                    </div>
-                  </section>
-
-                  {/* Time Commitment */}
-                  <section>
-                    <div className="flex items-center gap-2 mb-2 sm:mb-3">
-                      <Clock className={`w-4 h-4 sm:w-5 sm:h-5 ${isFrontOffice ? 'text-accent' : 'text-navy'}`} />
-                      <h3 className="font-display text-base sm:text-lg font-semibold text-foreground">
-                        Time Commitment
-                      </h3>
-                    </div>
-                    <div className={`
-                      inline-flex items-center gap-2 px-3 sm:px-4 py-1.5 sm:py-2 rounded-lg
-                      ${isFrontOffice ? 'bg-accent/10 text-accent' : 'bg-navy/10 text-navy'}
-                    `}>
-                      <Clock className="w-3 h-3 sm:w-4 sm:h-4" />
-                      <span className="font-body text-sm sm:text-base font-medium">{roleDetails.timeCommitment}</span>
                     </div>
                   </section>
                 </motion.div>

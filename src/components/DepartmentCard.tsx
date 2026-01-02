@@ -39,11 +39,6 @@ const DepartmentCard = ({ department, onClick, index }: DepartmentCardProps) => 
         {department.shortName}
       </h3>
 
-      {/* Full name */}
-      <p className="font-body text-xs text-muted-foreground uppercase tracking-wider mb-3">
-        {department.name !== department.shortName && department.name}
-      </p>
-
       {/* Description */}
       <p className="font-body text-sm text-muted-foreground leading-relaxed">
         {department.description}
